@@ -1,0 +1,186 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    >
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+
+        />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="100dp"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#80000000"
+                android:weightSum="100"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/imageView"
+                    android:src="@mipmap/msg_100"
+                    android:layout_weight="30"
+                    android:layout_margin="10dp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#fffbfe"
+                    android:ems="10"
+                    android:id="@+id/etEmail"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="E-mail"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorHighlight="#57974b"
+                    android:layout_weight="70"
+                    android:textSize="16dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="#80000000"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ImageView
+                    android:id="@+id/imageViewPassword"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="30"
+                    android:src="@mipmap/key_100" />
+
+                <EditText
+                    android:id="@+id/etPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="70"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+
+                    android:textColor="#fffbfe"
+                    android:textColorHighlight="#57974b"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="16dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="#80000000"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ImageView
+                    android:id="@+id/imageViewHouse"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="30"
+                    android:src="@mipmap/checking" />
+
+                <EditText
+                    android:id="@+id/etHouseCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="70"
+                    android:ems="10"
+                    android:hint="Family Code"
+                    android:inputType="text"
+
+                    android:textColor="#fffbfe"
+                    android:textColorHighlight="#57974b"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="16dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="#80a70bc1"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOGIN"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:background="#00000000"
+                    android:id="@+id/btnLogin"
+                    android:onClick="login"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="#80a70bc1"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CREATE AN ACCOUNT"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:background="#00000000"
+                    android:onClick="createAccount"
+                    android:id="@+id/btnAccount" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

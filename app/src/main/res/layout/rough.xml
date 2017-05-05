@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#20000000"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:layout_weight="30"
+                android:src="@mipmap/msg_50" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:layout_weight="70"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:paddingTop="20dp"
+                android:textColor="#fffbfe"
+                android:textColorHighlight="#57974b"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="#20000000"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/imageViewPassword"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:layout_weight="30"
+                android:src="@mipmap/key_50" />
+
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="70"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingTop="20dp"
+                android:textColor="#fffbfe"
+                android:textColorHighlight="#57974b"
+                android:textColorHint="#FFFFFF"
+                android:textSize="20dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="#20000000"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/imageViewHouse"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:layout_weight="30"
+                android:src="@mipmap/checking" />
+
+            <EditText
+                android:id="@+id/etHouseCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="70"
+                android:ems="10"
+                android:hint="House Code"
+                android:inputType="text"
+                android:paddingTop="20dp"
+                android:textColor="#fffbfe"
+                android:textColorHighlight="#57974b"
+                android:textColorHint="#FFFFFF"
+                android:textSize="20dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#60a70bc1"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:onClick="login"
+            >
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:background="#00000000"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/btnLogin"
+                android:focusableInTouchMode="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#60a70bc1"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:onClick="login"
+            >
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create an Account"
+                android:background="#00000000"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/btnAccount"
+                android:focusableInTouchMode="true"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
